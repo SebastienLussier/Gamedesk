@@ -1,0 +1,281 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Win32 Debug|Win32">
+      <Configuration>Win32 Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Win32 Release|Win32">
+      <Configuration>Win32 Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{3A8FAAF7-1B42-4942-BC13-15FBC63932F8}</ProjectGuid>
+    <RootNamespace>EditorLib</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Win32 Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Win32 Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Win32 Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Win32 Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Win32 Debug|Win32'">.\..\Tmp\EditorLib\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Win32 Debug|Win32'">.\..\Tmp\EditorLib\Debug\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Win32 Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Win32 Release|Win32'">.\..\Tmp\EditorLib\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Win32 Release|Win32'">.\..\Tmp\EditorLib\Release\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Win32 Release|Win32'">false</LinkIncremental>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Win32 Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Win32 Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Win32 Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Win32 Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Win32 Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Win32 Release|Win32'" />
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Win32 Debug|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\..\Tmp\EditorLib\Debug/EditorLib.tlb</TypeLibraryName>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>../Core/Common/;../Core/Win32/;../Engine/Common/;../Engine/Win32/;Z:/ode/include;$(QTDIR)\include\;$(QTDIR)\include\Qt;$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>EDITORLIB_API=__declspec(dllexport);GD_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>EditorLib.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>../Tmp/EditorLib/Debug/EditorLib_d.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\..\Tmp\EditorLib\Debug/</AssemblerListingLocation>
+      <ObjectFileName>.\..\Tmp\EditorLib\Debug/</ObjectFileName>
+      <ProgramDataBaseFileName>.\..\Tmp\EditorLib\Debug/</ProgramDataBaseFileName>
+      <WarningLevel>Level4</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+      <ShowIncludes>false</ShowIncludes>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0c0c</Culture>
+    </ResourceCompile>
+    <Link>
+      <AdditionalOptions>/MACHINE:I386 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>Core_d.lib;Engine_d.lib;$(QTDIR)\lib\QtCored4.lib;$(QTDIR)\lib\QtGuid4.lib;Vfw32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>../../Bin/EditorLib_d.dll</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>../Lib;Z:/Ode/lib;$(QTDIR)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>.\..\Tmp\EditorLib\Debug/EditorLib_d.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <ImportLibrary>../Lib/EditorLib_d.lib</ImportLibrary>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Win32 Release|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\..\Tmp\EditorLib\Release/EditorLib.tlb</TypeLibraryName>
+    </Midl>
+    <ClCompile>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <AdditionalIncludeDirectories>../Core/Common/;../Core/Win32/;../Engine/Common/;../Engine/Win32/;Z:/ode/include;$(QTDIR)\include\;$(QTDIR)\include\Qt;$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>EDITORLIB_API=__declspec(dllexport);%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>EditorLib.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>.\..\Tmp\EditorLib\Release/EditorLib.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\..\Tmp\EditorLib\Release/</AssemblerListingLocation>
+      <ObjectFileName>.\..\Tmp\EditorLib\Release/</ObjectFileName>
+      <ProgramDataBaseFileName>.\..\Tmp\EditorLib\Release/</ProgramDataBaseFileName>
+      <WarningLevel>Level4</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0c0c</Culture>
+    </ResourceCompile>
+    <Link>
+      <AdditionalOptions>/MACHINE:I386 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>Core.lib;Engine.lib;$(QTDIR)\lib\QtCore4.lib;$(QTDIR)\lib\QtGui4.lib;Vfw32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>../../Bin/EditorLib.dll</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>../Lib;Z:/Ode/lib;$(QTDIR)/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ProgramDatabaseFile>.\..\Tmp\EditorLib\Release/EditorLib.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <ImportLibrary>../Lib/EditorLib.lib</ImportLibrary>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="EditorBase.cpp" />
+    <ClCompile Include="EditorLib.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Win32 Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Win32 Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="EntityCreationListener.cpp" />
+    <ClCompile Include="EntityCreationSender.cpp" />
+    <ClCompile Include="SelectionListener.cpp" />
+    <ClCompile Include="SelectionSender.cpp" />
+    <ClCompile Include="WorldManager.cpp" />
+    <ClCompile Include="CameraChangeListener.cpp" />
+    <ClCompile Include="CameraChangeSender.cpp" />
+    <ClCompile Include="CreateEntityCommand.cpp" />
+    <ClCompile Include="DeleteEntityCommand.cpp" />
+    <ClCompile Include="AVIEncoder.cpp" />
+    <ClCompile Include="QRenderWindow.cpp" />
+    <ClCompile Include="Viewer.cpp" />
+    <ClCompile Include="EditorTool.cpp" />
+    <ClCompile Include="moc_EditorBase.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Win32 Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Win32 Release|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Manipulator\Manipulator.cpp" />
+    <ClCompile Include="Command\Command.cpp" />
+    <ClCompile Include="Command\CommandManager.cpp" />
+    <ClCompile Include="PropertyList\DefaultHelpers.cpp" />
+    <ClCompile Include="PropertyList\moc_PropertyList.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Win32 Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Win32 Debug|Win32'">
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Win32 Debug|Win32'">
+      </PrecompiledHeaderOutputFile>
+    </ClCompile>
+    <ClCompile Include="PropertyList\PropertyHelper.cpp" />
+    <ClCompile Include="PropertyList\PropertyList.cpp" />
+    <ClCompile Include="ResourceManager\ResourceManagerTool.cpp" />
+    <ClCompile Include="ResourceManager\ResourceManagerUI.cpp" />
+    <ClCompile Include="ResourceManager\moc_ResourceManagerUI.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Win32 Debug|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="WorldTool\WorldTool.cpp" />
+    <ClCompile Include="WorldTool\WorldUI.cpp" />
+    <ClCompile Include="WorldTool\moc_WorldUI.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Win32 Debug|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="EditorBase.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Win32 Debug|Win32'">Moc%27ing %(Filename).h ...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Win32 Debug|Win32'">$(QTDIR)\bin\moc.exe  -DEDITORLIB_API=__declspec(dllexport) -DGD_DEBUG -I".\..\Core\Common" -I".\..\Core\Win32" -I".\..\Engine\Common" -I".\..\Engine\Win32" -I"Z:\ode\include" -I"$(QTDIR)\include" -I"$(QTDIR)\include\Qt" -I"$(QTDIR)\include\QtCore" -I"$(QTDIR)\include\QtGui" ".\EditorBase.h" -o "%(RootDir)%(Directory)moc_%(Filename).cpp"
+</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Win32 Debug|Win32'">%(RootDir)%(Directory)moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Win32 Release|Win32'">Moc%27ing %(Filename).h ...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Win32 Release|Win32'">$(QTDIR)\bin\moc.exe  -DEDITORLIB_API=__declspec(dllexport) -I".\..\Core\Common" -I".\..\Core\Win32" -I".\..\Engine\Common" -I".\..\Engine\Win32" -I"Z:\ode\include" -I"$(QTDIR)\include" -I"$(QTDIR)\include\Qt" -I"$(QTDIR)\include\QtCore" -I"$(QTDIR)\include\QtGui" ".\EditorBase.h" -o "%(RootDir)%(Directory)moc_%(Filename).cpp"
+</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Win32 Release|Win32'">%(RootDir)%(Directory)moc_%(Filename).cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="EditorLib.h" />
+    <ClInclude Include="EntityCreationListener.h" />
+    <ClInclude Include="EntityCreationSender.h" />
+    <ClInclude Include="SelectionListener.h" />
+    <ClInclude Include="SelectionSender.h" />
+    <ClInclude Include="WorldManager.h" />
+    <ClInclude Include="CameraChangeListener.h" />
+    <ClInclude Include="CameraChangeSender.h" />
+    <ClInclude Include="CreateEntityCommand.h" />
+    <ClInclude Include="DeleteEntityCommand.h" />
+    <ClInclude Include="AVIEncoder.h" />
+    <ClInclude Include="QRenderWindow.h" />
+    <ClInclude Include="Viewer.h" />
+    <ClInclude Include="EditorTool.h" />
+    <ClInclude Include="Manipulator\Manipulator.h" />
+    <ClInclude Include="Command\Command.h" />
+    <ClInclude Include="Command\CommandManager.h" />
+    <CustomBuild Include="PropertyList\DefaultHelpers.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Win32 Debug|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Win32 Debug|Win32'">
+      </Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Win32 Debug|Win32'">%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="PropertyList\PropertyHelper.h" />
+    <CustomBuild Include="PropertyList\PropertyList.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Win32 Debug|Win32'">Moc%27ing %(Filename).h ...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Win32 Debug|Win32'">$(QTDIR)\bin\moc.exe  -DEDITORLIB_API=__declspec(dllexport) -DGD_DEBUG -I".\..\Core\Common" -I".\..\Core\Win32" -I".\..\Engine\Common" -I".\..\Engine\Win32" -I"Z:\ode\include" -I"$(QTDIR)\include" -I"$(QTDIR)\include\Qt" -I"$(QTDIR)\include\QtCore" -I"$(QTDIR)\include\QtGui" ".\PropertyList\PropertyList.h" -o "%(RootDir)%(Directory)moc_%(Filename).cpp"
+</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Win32 Debug|Win32'">%(RootDir)%(Directory)moc_%(Filename).cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="ResourceManager\ResourceManagerTool.h" />
+    <CustomBuild Include="ResourceManager\ResourceManagerUI.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Win32 Debug|Win32'">Moc%27ing %(Filename).h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Win32 Debug|Win32'">$(QTDIR)\bin\moc.exe  -DEDITORLIB_API=__declspec(dllexport) -DGD_DEBUG -I".\..\Core\Common" -I".\..\Core\Win32" -I".\..\Engine\Common" -I".\..\Engine\Win32" -I"Z:\ode\include" -I"$(QTDIR)\include" -I"$(QTDIR)\include\Qt" -I"$(QTDIR)\include\QtCore" -I"$(QTDIR)\include\QtGui" ".\ResourceManager\ResourceManagerUI.h" -o "%(RootDir)%(Directory)\moc_%(Filename).cpp"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Win32 Debug|Win32'">$(QTDIR)\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Win32 Debug|Win32'">%(RootDir)%(Directory)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="ResourceManager\ui_ResourceManagerUI.h" />
+    <ClInclude Include="WorldTool\WorldTool.h" />
+    <CustomBuild Include="WorldTool\WorldUI.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Win32 Debug|Win32'">Moc%27ing %(Filename).h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Win32 Debug|Win32'">$(QTDIR)\bin\moc.exe  -DEDITORLIB_API=__declspec(dllexport) -DGD_DEBUG -I".\..\Core\Common" -I".\..\Core\Win32" -I".\..\Engine\Common" -I".\..\Engine\Win32" -I"Z:\ode\include" -I"$(QTDIR)\include" -I"$(QTDIR)\include\Qt" -I"$(QTDIR)\include\QtCore" -I"$(QTDIR)\include\QtGui" ".\WorldTool\WorldUI.h" -o "%(RootDir)%(Directory)\moc_%(Filename).cpp"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Win32 Debug|Win32'">$(QTDIR)\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Win32 Debug|Win32'">%(RootDir)%(Directory)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="WorldTool\ui_WorldUI.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="ResourceManager\ResourceManagerUI.ui">
+      <FileType>Document</FileType>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Win32 Debug|Win32'">Uic%27ing %(Filename).ui ...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Win32 Debug|Win32'">"$(QTDIR)\bin\uic.exe" -o "%(RootDir)%(Directory)\ui_%(Filename).h" %(FullPath)
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Win32 Debug|Win32'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Win32 Debug|Win32'">%(RootDir)%(Directory)\ui_%(Filename).h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="WorldTool\WorldUI.ui">
+      <FileType>Document</FileType>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Win32 Debug|Win32'">Uic%27ing %(Filename).ui ...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Win32 Debug|Win32'">"$(QTDIR)\bin\uic.exe" -o "%(RootDir)%(Directory)\ui_%(Filename).h" %(FullPath)
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Win32 Debug|Win32'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Win32 Debug|Win32'">%(RootDir)%(Directory)\ui_%(Filename).h;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Engine\Engine.vcxproj">
+      <Project>{75ca8581-db13-4549-ba2b-9af0666fe7cf}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

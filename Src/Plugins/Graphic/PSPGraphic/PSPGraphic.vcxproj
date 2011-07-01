@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="PSP Debug|Win32">
+      <Configuration>PSP Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="PSP Release|Win32">
+      <Configuration>PSP Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{89EF22A5-08DC-493E-B145-64ADE599228A}</ProjectGuid>
+    <RootNamespace>PSPGraphic</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='PSP Release|Win32'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='PSP Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='PSP Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='PSP Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='PSP Debug|Win32'">$(GAMEDESK_ROOT)\Lib\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='PSP Debug|Win32'">$(GAMEDESK_ROOT)\Temp\$(Configuration)\$(ProjectName)\</IntDir>
+    <ExtensionsToDeleteOnClean Condition="'$(Configuration)|$(Platform)'=='PSP Debug|Win32'">*.o%3b*.d%3b$(TargetPath)</ExtensionsToDeleteOnClean>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='PSP Release|Win32'">.\../../../Tmp/PSPGraphic/Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='PSP Release|Win32'">.\../../../Tmp/PSPGraphic/Release\</IntDir>
+    <NMakeBuildCommandLine Condition="'$(Configuration)|$(Platform)'=='PSP Release|Win32'">bjam --platform=PSP $(ProjectName) release  2&gt;&amp;1 | sed -e "s/\(.[a-zA-Z]\+\):\([0-9]\+\):/\1(\2):/"</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine Condition="'$(Configuration)|$(Platform)'=='PSP Release|Win32'">bjam --platform=PSP $(ProjectName) release clean &amp;&amp; bjam --platform=PSP $(ProjectName) release  2&gt;&amp;1 | sed -e "s/\(.[a-zA-Z]\+\):\([0-9]\+\):/\1(\2):/"</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine Condition="'$(Configuration)|$(Platform)'=='PSP Release|Win32'">bjam --platform=PSP $(ProjectName) release clean</NMakeCleanCommandLine>
+    <NMakeOutput Condition="'$(Configuration)|$(Platform)'=='PSP Release|Win32'">libPSPGraphic.a</NMakeOutput>
+    <NMakePreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='PSP Release|Win32'">$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+    <NMakeIncludeSearchPath Condition="'$(Configuration)|$(Platform)'=='PSP Release|Win32'">$(NMakeIncludeSearchPath)</NMakeIncludeSearchPath>
+    <NMakeForcedIncludes Condition="'$(Configuration)|$(Platform)'=='PSP Release|Win32'">$(NMakeForcedIncludes)</NMakeForcedIncludes>
+    <NMakeAssemblySearchPath Condition="'$(Configuration)|$(Platform)'=='PSP Release|Win32'">$(NMakeAssemblySearchPath)</NMakeAssemblySearchPath>
+    <NMakeForcedUsingAssemblies Condition="'$(Configuration)|$(Platform)'=='PSP Release|Win32'">$(NMakeForcedUsingAssemblies)</NMakeForcedUsingAssemblies>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='PSP Debug|Win32'">
+    <ClCompile>
+      <AdditionalOptions>/VCCX_CFG=psp %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>.;$(GAMEDESK_ROOT)/Cpp/Core;$(GAMEDESK_ROOT)/Cpp/Engine;$(PSPSDK)\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>GD_DEBUG;PSPGRAPHIC_API=;PSP;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <WarningLevel>Level4</WarningLevel>
+    </ClCompile>
+    <Lib>
+      <AdditionalOptions>/VCCX_CFG=psp %(AdditionalOptions)</AdditionalOptions>
+      <OutputFile>$(OutDir)lib$(ProjectName).a</OutputFile>
+    </Lib>
+    <PostBuildEvent>
+      <Command>psp-ranlib "$(TargetPath)"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="D:\Programmation\Gamedesk\Cpp\Plugins\Graphic\PSPGraphic\Jamfile" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="PSPGraphic.cpp" />
+    <ClCompile Include="PSPGraphicSubsystem.cpp" />
+    <ClCompile Include="PSPRenderer.cpp" />
+    <ClCompile Include="PSPRenderWindow.cpp" />
+    <ClCompile Include="PSPTexture.cpp" />
+    <ClCompile Include="PSPTextureStage.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="PSPGraphic.h" />
+    <ClInclude Include="PSPGraphicSubsystem.h" />
+    <ClInclude Include="PSPRenderer.h" />
+    <ClInclude Include="PSPRenderWindow.h" />
+    <ClInclude Include="PSPTexture.h" />
+    <ClInclude Include="PSPTextureStage.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

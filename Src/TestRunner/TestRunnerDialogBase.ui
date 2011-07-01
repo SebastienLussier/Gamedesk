@@ -1,0 +1,236 @@
+<ui version="4.0" stdsetdef="1" >
+  <author></author>
+  <comment></comment>
+  <exportmacro></exportmacro>
+  <class>testrunnerDialogBase</class>
+  <widget class="QDialog" name="testrunnerDialogBase" >
+    <property name="geometry" >
+      <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>576</width>
+        <height>493</height>
+      </rect>
+    </property>
+    <property name="windowTitle" >
+      <string>Gamedesk Test Runner</string>
+    </property>
+    <property name="sizeGripEnabled" >
+      <bool>true</bool>
+    </property>
+    <widget class="QLabel" name="TextLabel5" >
+      <property name="geometry" >
+        <rect>
+          <x>11</x>
+          <y>11</y>
+          <width>59</width>
+          <height>26</height>
+        </rect>
+      </property>
+      <property name="text" >
+        <string>Test Module</string>
+      </property>
+    </widget>
+    <widget class="QPushButton" name="mBtnExit" >
+      <property name="geometry" >
+        <rect>
+          <x>490</x>
+          <y>450</y>
+          <width>80</width>
+          <height>30</height>
+        </rect>
+      </property>
+      <property name="text" >
+        <string>&amp;Exit</string>
+      </property>
+    </widget>
+    <widget class="Q3GroupBox" name="GroupBox1" >
+      <property name="geometry" >
+        <rect>
+          <x>10</x>
+          <y>50</y>
+          <width>560</width>
+          <height>390</height>
+        </rect>
+      </property>
+      <property name="sizePolicy" >
+        <sizepolicy>
+          <hsizetype>7</hsizetype>
+          <vsizetype>7</vsizetype>
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+        </sizepolicy>
+      </property>
+      <property name="title" >
+        <string>Results</string>
+      </property>
+      <widget class="QLabel" name="TextLabel1" >
+        <property name="geometry" >
+          <rect>
+            <x>30</x>
+            <y>20</y>
+            <width>50</width>
+            <height>20</height>
+          </rect>
+        </property>
+        <property name="text" >
+          <string>Progress</string>
+        </property>
+      </widget>
+      <widget class="Q3ProgressBar" name="mProgressBar" >
+        <property name="geometry" >
+          <rect>
+            <x>80</x>
+            <y>20</y>
+            <width>440</width>
+            <height>21</height>
+          </rect>
+        </property>
+      </widget>
+      <widget class="QLabel" name="TextLabel2" >
+        <property name="geometry" >
+          <rect>
+            <x>10</x>
+            <y>50</y>
+            <width>70</width>
+            <height>20</height>
+          </rect>
+        </property>
+        <property name="text" >
+          <string>Runs :</string>
+        </property>
+      </widget>
+      <widget class="QLabel" name="TextLabel3" >
+        <property name="geometry" >
+          <rect>
+            <x>10</x>
+            <y>120</y>
+            <width>40</width>
+            <height>20</height>
+          </rect>
+        </property>
+        <property name="text" >
+          <string>Output</string>
+        </property>
+      </widget>
+      <widget class="QLabel" name="TextLabel2_2_2" >
+        <property name="geometry" >
+          <rect>
+            <x>10</x>
+            <y>90</y>
+            <width>70</width>
+            <height>20</height>
+          </rect>
+        </property>
+        <property name="text" >
+          <string>Errors :</string>
+        </property>
+      </widget>
+      <widget class="QLabel" name="TextLabel2_2" >
+        <property name="geometry" >
+          <rect>
+            <x>10</x>
+            <y>70</y>
+            <width>70</width>
+            <height>20</height>
+          </rect>
+        </property>
+        <property name="text" >
+          <string>Failures :</string>
+        </property>
+      </widget>
+      <widget class="QLabel" name="mLblNbRuns" >
+        <property name="geometry" >
+          <rect>
+            <x>90</x>
+            <y>50</y>
+            <width>40</width>
+            <height>20</height>
+          </rect>
+        </property>
+        <property name="text" >
+          <string>0</string>
+        </property>
+      </widget>
+      <widget class="QLabel" name="mLblNbFailures" >
+        <property name="geometry" >
+          <rect>
+            <x>90</x>
+            <y>70</y>
+            <width>40</width>
+            <height>20</height>
+          </rect>
+        </property>
+        <property name="text" >
+          <string>0</string>
+        </property>
+      </widget>
+      <widget class="QLabel" name="mLblNbErrors" >
+        <property name="geometry" >
+          <rect>
+            <x>90</x>
+            <y>90</y>
+            <width>40</width>
+            <height>20</height>
+          </rect>
+        </property>
+        <property name="text" >
+          <string>0</string>
+        </property>
+      </widget>
+      <widget class="Q3MultiLineEdit" name="mLblOutput" >
+        <property name="geometry" >
+          <rect>
+            <x>10</x>
+            <y>140</y>
+            <width>540</width>
+            <height>240</height>
+          </rect>
+        </property>
+        <property name="frameShape" >
+          <enum>WinPanel</enum>
+        </property>
+        <property name="frameShadow" >
+          <enum>Sunken</enum>
+        </property>
+      </widget>
+    </widget>
+    <widget class="QPushButton" name="mBtnBrowseModule" >
+      <property name="geometry" >
+        <rect>
+          <x>203</x>
+          <y>11</y>
+          <width>80</width>
+          <height>26</height>
+        </rect>
+      </property>
+      <property name="text" >
+        <string>Load Module</string>
+      </property>
+    </widget>
+    <widget class="QPushButton" name="mBtnRunTests" >
+      <property name="geometry" >
+        <rect>
+          <x>439</x>
+          <y>11</y>
+          <width>130</width>
+          <height>26</height>
+        </rect>
+      </property>
+      <property name="text" >
+        <string>&amp;Run Tests</string>
+      </property>
+    </widget>
+    <widget class="QLineEdit" name="mLblModuleName" >
+      <property name="geometry" >
+        <rect>
+          <x>76</x>
+          <y>13</y>
+          <width>120</width>
+          <height>22</height>
+        </rect>
+      </property>
+    </widget>
+  </widget>
+  <pixmapfunction>qPixmapFromMimeSource</pixmapfunction>
+</ui>

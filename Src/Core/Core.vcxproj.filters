@@ -1,0 +1,425 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Containers">
+      <UniqueIdentifier>{fea67275-bd01-49c3-b1c6-229e8b7ed6a5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Debug">
+      <UniqueIdentifier>{84e1113b-a7de-4c21-84ac-adf08f371e5f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Exception">
+      <UniqueIdentifier>{651d6e10-925b-4ab2-8dc7-d9203d83970b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="FileManager">
+      <UniqueIdentifier>{8b5cfe54-96c1-4871-87ff-df72c8fc788e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="FileManager\Win32">
+      <UniqueIdentifier>{db6d5026-b033-4916-8833-d136aa002fe0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="FileManager\Linux">
+      <UniqueIdentifier>{b83f5526-eb31-4a10-b8b7-b036f52f27d6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="FileManager\PSP">
+      <UniqueIdentifier>{d7131780-f5cf-405f-ab9e-9b06056244aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Maths">
+      <UniqueIdentifier>{f7dbdac3-62e4-403e-bcf4-33598dc617e3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Module">
+      <UniqueIdentifier>{bfa4cfe9-a75c-40de-8efb-802fbb1a49ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object">
+      <UniqueIdentifier>{381477fc-79ad-49d2-9c0d-59ef35054a7d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Patterns">
+      <UniqueIdentifier>{ae35e43b-7ee5-494f-8774-0a6e9bd9576d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SystemInfo">
+      <UniqueIdentifier>{67a09197-dadb-4809-aa9a-b619b6870fef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SystemInfo\Win32">
+      <UniqueIdentifier>{dd4fbf39-7fa2-4754-85ee-9ff89337d257}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SystemInfo\Linux">
+      <UniqueIdentifier>{a78bbcbc-2be7-4d44-8852-ba99f893fe75}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SystemInfo\PSP">
+      <UniqueIdentifier>{ac8ae058-0905-474f-b4ee-139c361d112a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Types">
+      <UniqueIdentifier>{b62df5ef-073c-4f28-8410-640227cc452c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Types\Win32">
+      <UniqueIdentifier>{8f042a10-0d5e-4263-85b8-2864a973bc93}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Types\Linux">
+      <UniqueIdentifier>{5bccf0f2-d02d-4ffd-9ed7-ac92c396a6c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Types\PSP">
+      <UniqueIdentifier>{be339ee1-1be6-429c-8710-9cd68a494742}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PlatformSpecific">
+      <UniqueIdentifier>{4da65191-2a02-46c2-808e-7ade2eb5e5d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PlatformSpecific\Win32">
+      <UniqueIdentifier>{fae0240f-eb2c-4146-881b-e18f7f200588}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PlatformSpecific\Linux">
+      <UniqueIdentifier>{0ccf3b08-0c05-4cce-bf9a-6205aef5de97}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PlatformSpecific\PSP">
+      <UniqueIdentifier>{596bca5f-5b1b-41e2-bf50-4314d3ba2725}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Time">
+      <UniqueIdentifier>{38bd6841-e3da-4148-9ce9-3ce3fdcb0f4e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Config">
+      <UniqueIdentifier>{0f4fd86c-1629-4c4e-9c8a-ffa6c18b43a5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Test">
+      <UniqueIdentifier>{d23e36aa-b316-409c-b639-2cdcabb344f0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphic">
+      <UniqueIdentifier>{f2160383-ad06-4607-83cd-51131c44bfce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Stream">
+      <UniqueIdentifier>{cd4f1394-2e3b-494f-8945-667404c3e326}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Package">
+      <UniqueIdentifier>{cf8b5958-5cf0-4d91-8113-a00235521b19}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Memory">
+      <UniqueIdentifier>{64433ed6-bca3-489d-87c3-b9762569a9b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Thread">
+      <UniqueIdentifier>{eca92637-2e00-4d7d-a76a-40a3767e30ec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Thread\PSP">
+      <UniqueIdentifier>{51366f57-e2e3-4541-ac29-bbbe77967576}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Thread\Win32">
+      <UniqueIdentifier>{1ee8b366-74b8-4745-840d-2d4b6e57b98f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Containers\Bitset.h">
+      <Filter>Containers</Filter>
+    </ClInclude>
+    <ClInclude Include="Containers\Containers.h">
+      <Filter>Containers</Filter>
+    </ClInclude>
+    <ClInclude Include="Containers\DList.h">
+      <Filter>Containers</Filter>
+    </ClInclude>
+    <ClInclude Include="Containers\StringUtils.h">
+      <Filter>Containers</Filter>
+    </ClInclude>
+    <ClInclude Include="Containers\Tree.h">
+      <Filter>Containers</Filter>
+    </ClInclude>
+    <ClInclude Include="Debug\DebugUtil.h">
+      <Filter>Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="Debug\PerformanceMonitor.h">
+      <Filter>Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="Debug\StackTracer.h">
+      <Filter>Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="Exception\Exception.h">
+      <Filter>Exception</Filter>
+    </ClInclude>
+    <ClInclude Include="FileManager\Checksum.h">
+      <Filter>FileManager</Filter>
+    </ClInclude>
+    <ClInclude Include="FileManager\FileManager.h">
+      <Filter>FileManager</Filter>
+    </ClInclude>
+    <ClInclude Include="FileManager\MemoryFile.h">
+      <Filter>FileManager</Filter>
+    </ClInclude>
+    <ClInclude Include="Maths\BoundingBox.h">
+      <Filter>Maths</Filter>
+    </ClInclude>
+    <ClInclude Include="Maths\Frustum.h">
+      <Filter>Maths</Filter>
+    </ClInclude>
+    <ClInclude Include="Maths\Intersection.h">
+      <Filter>Maths</Filter>
+    </ClInclude>
+    <ClInclude Include="Maths\Line3.h">
+      <Filter>Maths</Filter>
+    </ClInclude>
+    <ClInclude Include="Maths\Maths.h">
+      <Filter>Maths</Filter>
+    </ClInclude>
+    <ClInclude Include="Maths\Matrix4.h">
+      <Filter>Maths</Filter>
+    </ClInclude>
+    <ClInclude Include="Maths\MatrixStack.h">
+      <Filter>Maths</Filter>
+    </ClInclude>
+    <ClInclude Include="Maths\Number.h">
+      <Filter>Maths</Filter>
+    </ClInclude>
+    <ClInclude Include="Maths\Plane3.h">
+      <Filter>Maths</Filter>
+    </ClInclude>
+    <ClInclude Include="Maths\Quaternion.h">
+      <Filter>Maths</Filter>
+    </ClInclude>
+    <ClInclude Include="Maths\Vector2.h">
+      <Filter>Maths</Filter>
+    </ClInclude>
+    <ClInclude Include="Maths\Vector3.h">
+      <Filter>Maths</Filter>
+    </ClInclude>
+    <ClInclude Include="Maths\VectorUtils.h">
+      <Filter>Maths</Filter>
+    </ClInclude>
+    <ClInclude Include="Module\Module.h">
+      <Filter>Module</Filter>
+    </ClInclude>
+    <ClInclude Include="Module\ModuleManager.h">
+      <Filter>Module</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Class.h">
+      <Filter>Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Object.h">
+      <Filter>Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\ObjectBasic.h">
+      <Filter>Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\ObjectIterator.h">
+      <Filter>Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Property.h">
+      <Filter>Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Patterns\Delegate.h">
+      <Filter>Patterns</Filter>
+    </ClInclude>
+    <ClInclude Include="Patterns\RefCount.h">
+      <Filter>Patterns</Filter>
+    </ClInclude>
+    <ClInclude Include="Patterns\Singleton.h">
+      <Filter>Patterns</Filter>
+    </ClInclude>
+    <ClInclude Include="SystemInfo\SystemInfo.h">
+      <Filter>SystemInfo</Filter>
+    </ClInclude>
+    <ClInclude Include="Types\Types.h">
+      <Filter>Types</Filter>
+    </ClInclude>
+    <ClInclude Include="PlatformSpecific\PlatformSpecific.h">
+      <Filter>PlatformSpecific</Filter>
+    </ClInclude>
+    <ClInclude Include="Time\DateTime.h">
+      <Filter>Time</Filter>
+    </ClInclude>
+    <ClInclude Include="Time\Timer.h">
+      <Filter>Time</Filter>
+    </ClInclude>
+    <ClInclude Include="Config\ConfigFile.h">
+      <Filter>Config</Filter>
+    </ClInclude>
+    <ClInclude Include="Config\Variant.h">
+      <Filter>Config</Filter>
+    </ClInclude>
+    <ClInclude Include="Test\Test.h">
+      <Filter>Test</Filter>
+    </ClInclude>
+    <ClInclude Include="Test\TestCase.h">
+      <Filter>Test</Filter>
+    </ClInclude>
+    <ClInclude Include="Test\TestResult.h">
+      <Filter>Test</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphic\Color3.h">
+      <Filter>Graphic</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphic\Color4.h">
+      <Filter>Graphic</Filter>
+    </ClInclude>
+    <ClInclude Include="Stream\Stream.h">
+      <Filter>Stream</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Package.h">
+      <Filter>Package</Filter>
+    </ClInclude>
+    <ClInclude Include="Memory\Memory.h">
+      <Filter>Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="Thread\Event.h">
+      <Filter>Thread</Filter>
+    </ClInclude>
+    <ClInclude Include="Thread\Mutex.h">
+      <Filter>Thread</Filter>
+    </ClInclude>
+    <ClInclude Include="Thread\Semaphore.h">
+      <Filter>Thread</Filter>
+    </ClInclude>
+    <ClInclude Include="Thread\Thread.h">
+      <Filter>Thread</Filter>
+    </ClInclude>
+    <ClInclude Include="BuildOptions.h" />
+    <ClInclude Include="Core.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Containers\StringUtils.cpp">
+      <Filter>Containers</Filter>
+    </ClCompile>
+    <ClCompile Include="Debug\DebugUtil.cpp">
+      <Filter>Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="Debug\PerformanceMonitor.cpp">
+      <Filter>Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="Debug\StackTracer.cpp">
+      <Filter>Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="Exception\Exception.cpp">
+      <Filter>Exception</Filter>
+    </ClCompile>
+    <ClCompile Include="FileManager\Checksum.cpp">
+      <Filter>FileManager</Filter>
+    </ClCompile>
+    <ClCompile Include="FileManager\Win32\FileManager.cpp">
+      <Filter>FileManager\Win32</Filter>
+    </ClCompile>
+    <ClCompile Include="FileManager\Win32\MemoryFile.cpp">
+      <Filter>FileManager\Win32</Filter>
+    </ClCompile>
+    <ClCompile Include="FileManager\Linux\FileManager.cpp">
+      <Filter>FileManager\Linux</Filter>
+    </ClCompile>
+    <ClCompile Include="FileManager\PSP\FileManager.cpp">
+      <Filter>FileManager\PSP</Filter>
+    </ClCompile>
+    <ClCompile Include="Maths\BoundingBox.cpp">
+      <Filter>Maths</Filter>
+    </ClCompile>
+    <ClCompile Include="Maths\Frustum.cpp">
+      <Filter>Maths</Filter>
+    </ClCompile>
+    <ClCompile Include="Maths\Intersection.cpp">
+      <Filter>Maths</Filter>
+    </ClCompile>
+    <ClCompile Include="Maths\Line3.cpp">
+      <Filter>Maths</Filter>
+    </ClCompile>
+    <ClCompile Include="Maths\Matrix4.cpp">
+      <Filter>Maths</Filter>
+    </ClCompile>
+    <ClCompile Include="Maths\Number.cpp">
+      <Filter>Maths</Filter>
+    </ClCompile>
+    <ClCompile Include="Maths\Plane3.cpp">
+      <Filter>Maths</Filter>
+    </ClCompile>
+    <ClCompile Include="Maths\Quaternion.cpp">
+      <Filter>Maths</Filter>
+    </ClCompile>
+    <ClCompile Include="Maths\Vector2.cpp">
+      <Filter>Maths</Filter>
+    </ClCompile>
+    <ClCompile Include="Maths\Vector3.cpp">
+      <Filter>Maths</Filter>
+    </ClCompile>
+    <ClCompile Include="Module\Module.cpp">
+      <Filter>Module</Filter>
+    </ClCompile>
+    <ClCompile Include="Module\ModuleManager.cpp">
+      <Filter>Module</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\Class.cpp">
+      <Filter>Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\Object.cpp">
+      <Filter>Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\Property.cpp">
+      <Filter>Object</Filter>
+    </ClCompile>
+    <ClCompile Include="SystemInfo\Win32\SystemInfo.cpp">
+      <Filter>SystemInfo\Win32</Filter>
+    </ClCompile>
+    <ClCompile Include="SystemInfo\Linux\SystemInfo.cpp">
+      <Filter>SystemInfo\Linux</Filter>
+    </ClCompile>
+    <ClCompile Include="PlatformSpecific\Win32\PlatformSpecific.cpp">
+      <Filter>PlatformSpecific\Win32</Filter>
+    </ClCompile>
+    <ClCompile Include="Time\DateTime.cpp">
+      <Filter>Time</Filter>
+    </ClCompile>
+    <ClCompile Include="Time\Timer.cpp">
+      <Filter>Time</Filter>
+    </ClCompile>
+    <ClCompile Include="Config\ConfigFile.cpp">
+      <Filter>Config</Filter>
+    </ClCompile>
+    <ClCompile Include="Config\Variant.cpp">
+      <Filter>Config</Filter>
+    </ClCompile>
+    <ClCompile Include="Test\Test.cpp">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="Test\TestCase.cpp">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="Test\TestResult.cpp">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphic\Color3.cpp">
+      <Filter>Graphic</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphic\Color4.cpp">
+      <Filter>Graphic</Filter>
+    </ClCompile>
+    <ClCompile Include="Stream\Stream.cpp">
+      <Filter>Stream</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Package.cpp">
+      <Filter>Package</Filter>
+    </ClCompile>
+    <ClCompile Include="Thread\Win32\Event.cpp">
+      <Filter>Thread\Win32</Filter>
+    </ClCompile>
+    <ClCompile Include="Thread\Win32\Mutex.cpp">
+      <Filter>Thread\Win32</Filter>
+    </ClCompile>
+    <ClCompile Include="Thread\Win32\Semaphore.cpp">
+      <Filter>Thread\Win32</Filter>
+    </ClCompile>
+    <ClCompile Include="Thread\Win32\Thread.cpp">
+      <Filter>Thread\Win32</Filter>
+    </ClCompile>
+    <ClCompile Include="Core.cpp" />
+    <ClCompile Include="SystemInfo\PSP\SystemInfo.cpp">
+      <Filter>SystemInfo\PSP</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuildStep Include="Types\Win32\Types.h">
+      <Filter>Types\Win32</Filter>
+    </CustomBuildStep>
+    <CustomBuildStep Include="Types\Linux\Types.h">
+      <Filter>Types\Linux</Filter>
+    </CustomBuildStep>
+    <CustomBuildStep Include="Types\PSP\Types.h">
+      <Filter>Types\PSP</Filter>
+    </CustomBuildStep>
+    <CustomBuildStep Include="PlatformSpecific\Win32\PlatformSpecific.h">
+      <Filter>PlatformSpecific\Win32</Filter>
+    </CustomBuildStep>
+    <CustomBuildStep Include="PlatformSpecific\Linux\PlatformSpecific.h">
+      <Filter>PlatformSpecific\Linux</Filter>
+    </CustomBuildStep>
+    <CustomBuildStep Include="PlatformSpecific\PSP\PlatformSpecific.h">
+      <Filter>PlatformSpecific\PSP</Filter>
+    </CustomBuildStep>
+  </ItemGroup>
+</Project>

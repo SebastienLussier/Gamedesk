@@ -1,0 +1,38 @@
+<ui version="4.0" stdsetdef="1" >
+  <author></author>
+  <comment></comment>
+  <exportmacro></exportmacro>
+  <class>QPropertyEditor</class>
+  <widget class="QWidget" name="QPropertyEditor" >
+    <property name="geometry" >
+      <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>303</width>
+        <height>511</height>
+      </rect>
+    </property>
+    <property name="windowTitle" >
+      <string>Property Editor</string>
+    </property>
+    <layout class="QGridLayout" >
+      <property name="margin" >
+        <number>5</number>
+      </property>
+      <property name="spacing" >
+        <number>6</number>
+      </property>
+      <item row="0" column="0" >
+        <widget class="Q3Frame" name="mPropertyListFrame" >
+          <property name="frameShape" >
+            <enum>StyledPanel</enum>
+          </property>
+          <property name="frameShadow" >
+            <enum>Sunken</enum>
+          </property>
+        </widget>
+      </item>
+    </layout>
+  </widget>
+  <pixmapfunction>qPixmapFromMimeSource</pixmapfunction>
+</ui>

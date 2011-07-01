@@ -1,0 +1,643 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Application">
+      <UniqueIdentifier>{9a4b4e40-e557-458a-9a0d-e780efaff686}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\Win32">
+      <UniqueIdentifier>{d2f4ca9d-564a-4698-8db1-ca5c902d436c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game">
+      <UniqueIdentifier>{57bd46ac-976f-4c28-a004-a88fc592dc51}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Manager">
+      <UniqueIdentifier>{02d6bb46-8602-4de4-b35e-a0a130665616}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Network">
+      <UniqueIdentifier>{c7ac336e-52de-4f4e-a4c0-0bdede3f3a35}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphic">
+      <UniqueIdentifier>{4433c98c-03a8-46db-90e1-ae59e0aae40b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphic\Font">
+      <UniqueIdentifier>{4dee7c00-6906-4f7c-b066-f70417948836}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphic\Texture">
+      <UniqueIdentifier>{71b94f89-322b-47a4-911c-8cf323b936b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphic\Mesh">
+      <UniqueIdentifier>{30bf8b58-f65e-497a-a6f8-622e5aeda662}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphic\Buffer">
+      <UniqueIdentifier>{6c548e3e-4528-4e50-890a-14da778e2364}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphic\RenderTarget">
+      <UniqueIdentifier>{fc312c15-5603-4d9d-9682-e126a7b4d548}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphic\Material">
+      <UniqueIdentifier>{6010084c-134e-4f51-98b0-932dd9164990}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphic\Shader">
+      <UniqueIdentifier>{8e72faf6-70c1-48d9-800b-e604fde11a2d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphic\Tools">
+      <UniqueIdentifier>{230f1a5a-9c9d-4692-ae02-343c07922e7e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphic\Tools\Win32">
+      <UniqueIdentifier>{87c86d43-f77e-493e-9157-3a0ba53a567e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphic\Tools\Win32\NvTriStrip">
+      <UniqueIdentifier>{301aa2e5-9b12-483f-bd70-b011102fb694}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphic\Image">
+      <UniqueIdentifier>{d82b88ea-2d67-4dfe-a88e-020ad6764e18}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sound">
+      <UniqueIdentifier>{0197c55d-0ba8-46f1-84e2-6f842f49e8ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Input">
+      <UniqueIdentifier>{4d0e7368-7e01-43a4-8fe7-c380bcf6c7b7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="World">
+      <UniqueIdentifier>{30a2037f-574e-45ee-aaf1-fc44443263a1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="World\Test Entities">
+      <UniqueIdentifier>{0532b9cf-c3c5-472b-8f62-318754ba4d7e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource">
+      <UniqueIdentifier>{e3cf921b-90c6-4347-920c-3aac8a7e6102}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Collision">
+      <UniqueIdentifier>{a39f940d-c383-4cf2-a27e-b652ed424b30}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UI">
+      <UniqueIdentifier>{52dae88c-a2ff-428c-abc6-3444de9e1a4d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Subsystem">
+      <UniqueIdentifier>{7aae505b-94d9-4d2b-9350-77052a3673b1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="World\SpacePartition">
+      <UniqueIdentifier>{73346926-4f3a-4411-9816-2949e520a72b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="World\Camera">
+      <UniqueIdentifier>{40ebd4c6-1a5a-4ae1-a260-998aff8fe975}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Application\Application.cpp">
+      <Filter>Application</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\Window.cpp">
+      <Filter>Application</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\Win32\Win32Window.cpp">
+      <Filter>Application\Win32</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Game.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Manager\Manager.cpp">
+      <Filter>Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\NetworkSubsystem.cpp">
+      <Filter>Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphic\GraphicSubsystem.cpp">
+      <Filter>Graphic</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphic\Renderer.cpp">
+      <Filter>Graphic</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphic\Font\Font.cpp">
+      <Filter>Graphic\Font</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphic\Font\FontHdl.cpp">
+      <Filter>Graphic\Font</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphic\Font\FontManager.cpp">
+      <Filter>Graphic\Font</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphic\Texture\PackedTexture.cpp">
+      <Filter>Graphic\Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphic\Texture\Texture.cpp">
+      <Filter>Graphic\Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphic\Texture\TextureHdl.cpp">
+      <Filter>Graphic\Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphic\Texture\TextureManager.cpp">
+      <Filter>Graphic\Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphic\Texture\TextureStage.cpp">
+      <Filter>Graphic\Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphic\Mesh\Mesh.cpp">
+      <Filter>Graphic\Mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphic\Mesh\MeshHdl.cpp">
+      <Filter>Graphic\Mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphic\Mesh\MeshManager.cpp">
+      <Filter>Graphic\Mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphic\Mesh\SkeletalAnim.cpp">
+      <Filter>Graphic\Mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphic\Mesh\SkeletalMesh.cpp">
+      <Filter>Graphic\Mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphic\Mesh\StaticMesh.cpp">
+      <Filter>Graphic\Mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphic\Buffer\IndexBuffer.cpp">
+      <Filter>Graphic\Buffer</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphic\Buffer\SoftwareIndexBuffer.cpp">
+      <Filter>Graphic\Buffer</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphic\Buffer\SoftwareVertexBuffer.cpp">
+      <Filter>Graphic\Buffer</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphic\Buffer\TriangleBatch.cpp">
+      <Filter>Graphic\Buffer</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphic\Buffer\VertexBuffer.cpp">
+      <Filter>Graphic\Buffer</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphic\Buffer\VertexFormat.cpp">
+      <Filter>Graphic\Buffer</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphic\Buffer\VertexList.cpp">
+      <Filter>Graphic\Buffer</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphic\RenderTarget\RenderTarget.cpp">
+      <Filter>Graphic\RenderTarget</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphic\RenderTarget\RenderTexture.cpp">
+      <Filter>Graphic\RenderTarget</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphic\RenderTarget\RenderWindow.cpp">
+      <Filter>Graphic\RenderTarget</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphic\Material\Material.cpp">
+      <Filter>Graphic\Material</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphic\Material\Surface.cpp">
+      <Filter>Graphic\Material</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphic\Shader\Shader.cpp">
+      <Filter>Graphic\Shader</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphic\Shader\ShaderObject.cpp">
+      <Filter>Graphic\Shader</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphic\Shader\ShaderProgram.cpp">
+      <Filter>Graphic\Shader</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphic\Tools\Win32\NVTriStrip\NvTriStrip.cpp">
+      <Filter>Graphic\Tools\Win32\NvTriStrip</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphic\Tools\Win32\NVTriStrip\NvTriStripObjects.cpp">
+      <Filter>Graphic\Tools\Win32\NvTriStrip</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphic\Image\Image.cpp">
+      <Filter>Graphic\Image</Filter>
+    </ClCompile>
+    <ClCompile Include="Sound\Sound.cpp">
+      <Filter>Sound</Filter>
+    </ClCompile>
+    <ClCompile Include="Sound\SoundData.cpp">
+      <Filter>Sound</Filter>
+    </ClCompile>
+    <ClCompile Include="Sound\SoundHdl.cpp">
+      <Filter>Sound</Filter>
+    </ClCompile>
+    <ClCompile Include="Sound\SoundManager.cpp">
+      <Filter>Sound</Filter>
+    </ClCompile>
+    <ClCompile Include="Sound\SoundSubsystem.cpp">
+      <Filter>Sound</Filter>
+    </ClCompile>
+    <ClCompile Include="Input\InputDevice.cpp">
+      <Filter>Input</Filter>
+    </ClCompile>
+    <ClCompile Include="Input\InputState.cpp">
+      <Filter>Input</Filter>
+    </ClCompile>
+    <ClCompile Include="Input\InputSubsystem.cpp">
+      <Filter>Input</Filter>
+    </ClCompile>
+    <ClCompile Include="Input\Keyboard.cpp">
+      <Filter>Input</Filter>
+    </ClCompile>
+    <ClCompile Include="Input\Mouse.cpp">
+      <Filter>Input</Filter>
+    </ClCompile>
+    <ClCompile Include="World\Character.cpp">
+      <Filter>World</Filter>
+    </ClCompile>
+    <ClCompile Include="World\Entity.cpp">
+      <Filter>World</Filter>
+    </ClCompile>
+    <ClCompile Include="World\LensFlare.cpp">
+      <Filter>World</Filter>
+    </ClCompile>
+    <ClCompile Include="World\Level.cpp">
+      <Filter>World</Filter>
+    </ClCompile>
+    <ClCompile Include="World\Model3D.cpp">
+      <Filter>World</Filter>
+    </ClCompile>
+    <ClCompile Include="World\ParticleEmitter.cpp">
+      <Filter>World</Filter>
+    </ClCompile>
+    <ClCompile Include="World\SkyDome.cpp">
+      <Filter>World</Filter>
+    </ClCompile>
+    <ClCompile Include="World\Sound3D.cpp">
+      <Filter>World</Filter>
+    </ClCompile>
+    <ClCompile Include="World\Terrain.cpp">
+      <Filter>World</Filter>
+    </ClCompile>
+    <ClCompile Include="World\World.cpp">
+      <Filter>World</Filter>
+    </ClCompile>
+    <ClCompile Include="World\WorldTile.cpp">
+      <Filter>World</Filter>
+    </ClCompile>
+    <ClCompile Include="World\TestEntities\TestCubeMap.cpp">
+      <Filter>World\Test Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="World\TestEntities\TestProperties.cpp">
+      <Filter>World\Test Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="World\TestEntities\TestRenderTexture.cpp">
+      <Filter>World\Test Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="World\TestEntities\TestShaderProgram.cpp">
+      <Filter>World\Test Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="World\TestEntities\TestTexture2D.cpp">
+      <Filter>World\Test Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="World\TestEntities\TestUI.cpp">
+      <Filter>World\Test Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\Resource.cpp">
+      <Filter>Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\ResourceHandle.cpp">
+      <Filter>Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\ResourceManager.cpp">
+      <Filter>Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="Collision\kDOPTree.cpp">
+      <Filter>Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\UIButton.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\UICheckBox.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\UIComboBox.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\UIDefaultStyle.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\UIDesktop.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\UIElement.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\UILabel.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\UIPainter.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\UIPushButton.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\UIRadioButton.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\UIStyle.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\UIWidget.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Subsystem\Subsystem.cpp">
+      <Filter>Subsystem</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine.cpp" />
+    <ClCompile Include="EngineEnums.cpp" />
+    <ClCompile Include="EngineProperties.cpp" />
+    <ClCompile Include="World\Camera.cpp">
+      <Filter>World\Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="World\CharacterCamera.cpp">
+      <Filter>World\Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="World\FollowCamera.cpp">
+      <Filter>World\Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="World\LookCamera.cpp">
+      <Filter>World\Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="World\SpacePartition\BSP.cpp">
+      <Filter>World\SpacePartition</Filter>
+    </ClCompile>
+    <ClCompile Include="World\SpacePartition\Octree.cpp">
+      <Filter>World\SpacePartition</Filter>
+    </ClCompile>
+    <ClCompile Include="World\SpacePartition\SpacePartition.cpp">
+      <Filter>World\SpacePartition</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Application\Application.h">
+      <Filter>Application</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\Window.h">
+      <Filter>Application</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Game.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Manager\Manager.h">
+      <Filter>Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\NetworkSubsystem.h">
+      <Filter>Network</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphic\GraphicSubsystem.h">
+      <Filter>Graphic</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphic\Renderer.h">
+      <Filter>Graphic</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphic\Font\Font.h">
+      <Filter>Graphic\Font</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphic\Font\FontHdl.h">
+      <Filter>Graphic\Font</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphic\Font\FontManager.h">
+      <Filter>Graphic\Font</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphic\Texture\PackedTexture.h">
+      <Filter>Graphic\Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphic\Texture\Texture.h">
+      <Filter>Graphic\Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphic\Texture\TextureHdl.h">
+      <Filter>Graphic\Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphic\Texture\TextureManager.h">
+      <Filter>Graphic\Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphic\Texture\TextureStage.h">
+      <Filter>Graphic\Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphic\Mesh\Mesh.h">
+      <Filter>Graphic\Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphic\Mesh\MeshHdl.h">
+      <Filter>Graphic\Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphic\Mesh\MeshManager.h">
+      <Filter>Graphic\Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphic\Mesh\SkeletalAnim.h">
+      <Filter>Graphic\Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphic\Mesh\SkeletalMesh.h">
+      <Filter>Graphic\Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphic\Mesh\StaticMesh.h">
+      <Filter>Graphic\Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphic\Buffer\IndexBuffer.h">
+      <Filter>Graphic\Buffer</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphic\Buffer\SoftwareIndexBuffer.h">
+      <Filter>Graphic\Buffer</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphic\Buffer\SoftwareVertexBuffer.h">
+      <Filter>Graphic\Buffer</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphic\Buffer\TriangleBatch.h">
+      <Filter>Graphic\Buffer</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphic\Buffer\VertexBuffer.h">
+      <Filter>Graphic\Buffer</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphic\Buffer\VertexFormat.h">
+      <Filter>Graphic\Buffer</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphic\Buffer\VertexList.h">
+      <Filter>Graphic\Buffer</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphic\RenderTarget\RenderTarget.h">
+      <Filter>Graphic\RenderTarget</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphic\RenderTarget\RenderTexture.h">
+      <Filter>Graphic\RenderTarget</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphic\RenderTarget\RenderWindow.h">
+      <Filter>Graphic\RenderTarget</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphic\Material\Material.h">
+      <Filter>Graphic\Material</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphic\Material\Surface.h">
+      <Filter>Graphic\Material</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphic\Shader\Shader.h">
+      <Filter>Graphic\Shader</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphic\Shader\ShaderObject.h">
+      <Filter>Graphic\Shader</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphic\Shader\ShaderProgram.h">
+      <Filter>Graphic\Shader</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphic\Image\Image.h">
+      <Filter>Graphic\Image</Filter>
+    </ClInclude>
+    <ClInclude Include="Sound\Sound.h">
+      <Filter>Sound</Filter>
+    </ClInclude>
+    <ClInclude Include="Sound\SoundData.h">
+      <Filter>Sound</Filter>
+    </ClInclude>
+    <ClInclude Include="Sound\SoundHdl.h">
+      <Filter>Sound</Filter>
+    </ClInclude>
+    <ClInclude Include="Sound\SoundManager.h">
+      <Filter>Sound</Filter>
+    </ClInclude>
+    <ClInclude Include="Sound\SoundSubsystem.h">
+      <Filter>Sound</Filter>
+    </ClInclude>
+    <ClInclude Include="Input\InputDevice.h">
+      <Filter>Input</Filter>
+    </ClInclude>
+    <ClInclude Include="Input\InputState.h">
+      <Filter>Input</Filter>
+    </ClInclude>
+    <ClInclude Include="Input\InputSubsystem.h">
+      <Filter>Input</Filter>
+    </ClInclude>
+    <ClInclude Include="Input\Keyboard.h">
+      <Filter>Input</Filter>
+    </ClInclude>
+    <ClInclude Include="Input\Mouse.h">
+      <Filter>Input</Filter>
+    </ClInclude>
+    <ClInclude Include="World\Character.h">
+      <Filter>World</Filter>
+    </ClInclude>
+    <ClInclude Include="World\Entity.h">
+      <Filter>World</Filter>
+    </ClInclude>
+    <ClInclude Include="World\LensFlare.h">
+      <Filter>World</Filter>
+    </ClInclude>
+    <ClInclude Include="World\Level.h">
+      <Filter>World</Filter>
+    </ClInclude>
+    <ClInclude Include="World\Model3D.h">
+      <Filter>World</Filter>
+    </ClInclude>
+    <ClInclude Include="World\ParticleEmitter.h">
+      <Filter>World</Filter>
+    </ClInclude>
+    <ClInclude Include="World\SkyDome.h">
+      <Filter>World</Filter>
+    </ClInclude>
+    <ClInclude Include="World\Sound3D.h">
+      <Filter>World</Filter>
+    </ClInclude>
+    <ClInclude Include="World\Terrain.h">
+      <Filter>World</Filter>
+    </ClInclude>
+    <ClInclude Include="World\World.h">
+      <Filter>World</Filter>
+    </ClInclude>
+    <ClInclude Include="World\WorldTile.h">
+      <Filter>World</Filter>
+    </ClInclude>
+    <ClInclude Include="World\TestEntities\TestProperties.h">
+      <Filter>World\Test Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\Resource.h">
+      <Filter>Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\ResourceHandle.h">
+      <Filter>Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\ResourceManager.h">
+      <Filter>Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="Collision\KDOPTree.h">
+      <Filter>Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\UIBase.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\UIButton.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\UICheckBox.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\UIComboBox.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\UIDefaultStyle.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\UIDefaultStyleBitmaps.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\UIDesktop.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\UIElement.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\UIFrame.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\UILabel.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\UIPainter.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\UIPushButton.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\UIRadioButton.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\UIStyle.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\UIWidget.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Subsystem\Subsystem.h">
+      <Filter>Subsystem</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine.h" />
+    <ClInclude Include="EngineEnums.h" />
+    <ClInclude Include="World\Camera.h">
+      <Filter>World\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="World\CharacterCamera.h">
+      <Filter>World\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="World\FollowCamera.h">
+      <Filter>World\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="World\LookCamera.h">
+      <Filter>World\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="World\SpacePartition\BSP.h">
+      <Filter>World\SpacePartition</Filter>
+    </ClInclude>
+    <ClInclude Include="World\SpacePartition\Octree.h">
+      <Filter>World\SpacePartition</Filter>
+    </ClInclude>
+    <ClInclude Include="World\SpacePartition\SpacePartition.h">
+      <Filter>World\SpacePartition</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Jamfile" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuildStep Include="Application\Win32\Win32Window.h">
+      <Filter>Application\Win32</Filter>
+    </CustomBuildStep>
+    <CustomBuildStep Include="Graphic\Tools\Win32\NVTriStrip\NvTriStrip.h">
+      <Filter>Graphic\Tools\Win32\NvTriStrip</Filter>
+    </CustomBuildStep>
+    <CustomBuildStep Include="Graphic\Tools\Win32\NVTriStrip\NvTriStripObjects.h">
+      <Filter>Graphic\Tools\Win32\NvTriStrip</Filter>
+    </CustomBuildStep>
+    <CustomBuildStep Include="Graphic\Tools\Win32\NVTriStrip\VertexCache.h">
+      <Filter>Graphic\Tools\Win32\NvTriStrip</Filter>
+    </CustomBuildStep>
+  </ItemGroup>
+</Project>

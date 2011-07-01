@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Manipulators">
+      <UniqueIdentifier>{d0f945fe-6a6b-4fad-acaa-9b45a6ce43e5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UserActivityMonitor">
+      <UniqueIdentifier>{fe14cb6e-e3b3-4c19-b8de-7ec84285580c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="EditorLink.h" />
+    <ClInclude Include="PropertyBag.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="Stdafx.h" />
+    <ClInclude Include="BasicTypes.h" />
+    <ClInclude Include="BasicTypesEditors.h" />
+    <ClInclude Include="GlobalResources.h" />
+    <ClInclude Include="ObjectLink.h" />
+    <ClInclude Include="World.h" />
+    <ClInclude Include="Entity.h" />
+    <ClInclude Include="..\EditorLib\Manipulator\Manipulator.h">
+      <Filter>Manipulators</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AssemblyInfo.cpp" />
+    <ClCompile Include="EditorLink.cpp" />
+    <ClCompile Include="PropertyBag.cpp" />
+    <ClCompile Include="Stdafx.cpp" />
+    <ClCompile Include="BasicTypes.cpp" />
+    <ClCompile Include="ObjectLink.cpp" />
+    <ClCompile Include="World.cpp" />
+    <ClCompile Include="Entity.cpp" />
+    <ClCompile Include="..\EditorLib\Manipulator\Manipulator.cpp">
+      <Filter>Manipulators</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="UserActivityMonitor\GlobalEventProvider.cs">
+      <Filter>UserActivityMonitor</Filter>
+    </None>
+    <None Include="UserActivityMonitor\HookManager.Callbacks.cs">
+      <Filter>UserActivityMonitor</Filter>
+    </None>
+    <None Include="UserActivityMonitor\HookManager.cs">
+      <Filter>UserActivityMonitor</Filter>
+    </None>
+    <None Include="UserActivityMonitor\HookManager.Structures.cs">
+      <Filter>UserActivityMonitor</Filter>
+    </None>
+    <None Include="UserActivityMonitor\HookManager.Windows.cs">
+      <Filter>UserActivityMonitor</Filter>
+    </None>
+    <None Include="UserActivityMonitor\MouseEventExtArgs.cs">
+      <Filter>UserActivityMonitor</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="app.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

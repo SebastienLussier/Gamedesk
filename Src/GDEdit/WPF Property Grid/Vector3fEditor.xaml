@@ -1,0 +1,19 @@
+﻿<UserControl x:Class="GDEdit.Vector3fEditor"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Background="White"
+             xmlns:local="clr-namespace:GDEdit">
+    <StackPanel Orientation="Vertical" Background="White" Margin="5">
+        <StackPanel Orientation="Horizontal" Background='White'>
+            <TextBlock Text="x" Width="10" />
+            <local:ExtendedTextBox Width='80' x:Name='TextX' Text='{Binding Path=Value.x}'/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Background='White'>
+            <TextBlock Text="y" Width="10" />
+            <local:ExtendedTextBox Width='80' x:Name='TextY' Text='{Binding Path=Value.y}'/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Background='White'>
+            <TextBlock Text="z" Width="10" />
+            <local:ExtendedTextBox Width='80' x:Name='TextZ' Text='{Binding Path=Value.z}'/>
+        </StackPanel>
+    </StackPanel>
+</UserControl>

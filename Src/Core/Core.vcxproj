@@ -1,0 +1,379 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="PSP Debug|Win32">
+      <Configuration>PSP Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="PSP Release|Win32">
+      <Configuration>PSP Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Win32 Debug|Win32">
+      <Configuration>Win32 Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Win32 Release|Win32">
+      <Configuration>Win32 Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{5EACD6E7-D294-414F-ACB2-90A32D4353C0}</ProjectGuid>
+    <RootNamespace>Core</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='PSP Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='PSP Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Win32 Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Win32 Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='PSP Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\Common.props" />
+    <Import Project="..\Common_PSP.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='PSP Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Win32 Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\Common.props" />
+    <Import Project="$(SolutionDir)\Common_Win32.props" />
+    <Import Project="$(SolutionDir)\Common_Win32_Release.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Win32 Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\Common.props" />
+    <Import Project="$(SolutionDir)\Common_Win32.props" />
+    <Import Project="$(SolutionDir)\Common_Win32_Debug.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Win32 Debug|Win32'">$(GAMEDESK_ROOT)\Bin\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Win32 Release|Win32'">$(GAMEDESK_ROOT)\Bin\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='PSP Release|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='PSP Release|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='PSP Release|Win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='PSP Release|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='PSP Debug|Win32'">$(GAMEDESK_ROOT)\Lib\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='PSP Debug|Win32'">$(GAMEDESK_ROOT)\Temp\$(Configuration)\$(ProjectName)\</IntDir>
+    <ExtensionsToDeleteOnClean Condition="'$(Configuration)|$(Platform)'=='PSP Debug|Win32'">*.o%3b*.d%3b$(TargetPath)</ExtensionsToDeleteOnClean>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='PSP Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='PSP Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='PSP Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='PSP Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='PSP Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='PSP Release|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Win32 Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Win32 Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Win32 Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Win32 Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Win32 Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Win32 Release|Win32'" />
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Win32 Debug|Win32'">
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+    <Midl>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\..\Tmp\Core\Debug/Core.tlb</TypeLibraryName>
+    </Midl>
+    <ClCompile>
+      <PreprocessorDefinitions>CORE_API=__declspec(dllexport);%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>
+      </AssemblerListingLocation>
+      <EnablePREfast>false</EnablePREfast>
+    </ClCompile>
+    <ResourceCompile>
+      <Culture>0x0c0c</Culture>
+    </ResourceCompile>
+    <Link>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Win32 Release|Win32'">
+    <Midl>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\..\Tmp\Core\Release/Core.tlb</TypeLibraryName>
+    </Midl>
+    <ClCompile>
+      <PreprocessorDefinitions>CORE_API=__declspec(dllexport);%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ResourceCompile>
+      <Culture>0x0c0c</Culture>
+    </ResourceCompile>
+    <Link>
+      <AdditionalOptions>/MACHINE:I386 %(AdditionalOptions)</AdditionalOptions>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='PSP Release|Win32'">
+    <Midl>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\..\Tmp\Core\Release/Core.tlb</TypeLibraryName>
+    </Midl>
+    <ClCompile>
+      <Optimization>Full</Optimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Neither</FavorSizeOrSpeed>
+      <OmitFramePointers>false</OmitFramePointers>
+      <AdditionalIncludeDirectories>.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>CORE_API=__declspec(dllexport);GD_RELEASE;WIN32;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions</EnableEnhancedInstructionSet>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>Core.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(IntDir)$(ProjectName).pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)</ProgramDataBaseFileName>
+      <WarningLevel>Level4</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <ResourceCompile>
+      <Culture>0x0c0c</Culture>
+    </ResourceCompile>
+    <Link>
+      <AdditionalOptions>/MACHINE:I386 %(AdditionalOptions)</AdditionalOptions>
+      <OutputFile>$(GAMEDESK_ROOT)/Bin/$(ProjectName).dll</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(IntDir)$(ProjectName).pdb</ProgramDatabaseFile>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <ImportLibrary>$(GAMEDESK_ROOT)/Libs/$(Configuration)/$(ProjectName).lib</ImportLibrary>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='PSP Debug|Win32'">
+    <ClCompile>
+      <AdditionalOptions>/VCCX_CFG=psp %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>.;$(PSPSDK)\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>GD_DEBUG;CORE_API=;PSP;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <AssemblerListingLocation>
+      </AssemblerListingLocation>
+      <BrowseInformationFile>
+      </BrowseInformationFile>
+      <WarningLevel>Level4</WarningLevel>
+    </ClCompile>
+    <Lib>
+      <AdditionalOptions>/VCCX_CFG=psp
+/VCCX_VERBOSE=full
+/VCCX_DBGBREAK %(AdditionalOptions)</AdditionalOptions>
+      <OutputFile>$(OutDir)lib$(ProjectName).a</OutputFile>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ModuleDefinitionFile>
+      </ModuleDefinitionFile>
+      <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+    </Lib>
+    <PostBuildEvent>
+      <Command>psp-ranlib "$(TargetPath)"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="Containers\Bitset.h" />
+    <ClInclude Include="Containers\Containers.h" />
+    <ClInclude Include="Containers\DList.h" />
+    <ClInclude Include="Containers\StringUtils.h" />
+    <ClInclude Include="Containers\Tree.h" />
+    <ClInclude Include="Debug\DebugUtil.h" />
+    <ClInclude Include="Debug\PerformanceMonitor.h" />
+    <ClInclude Include="Debug\StackTracer.h" />
+    <ClInclude Include="Exception\Exception.h" />
+    <ClInclude Include="FileManager\Checksum.h" />
+    <ClInclude Include="FileManager\FileManager.h" />
+    <ClInclude Include="FileManager\MemoryFile.h" />
+    <ClInclude Include="Maths\BoundingBox.h" />
+    <ClInclude Include="Maths\Frustum.h" />
+    <ClInclude Include="Maths\Intersection.h" />
+    <ClInclude Include="Maths\Line3.h" />
+    <ClInclude Include="Maths\Maths.h" />
+    <ClInclude Include="Maths\Matrix4.h" />
+    <ClInclude Include="Maths\MatrixStack.h" />
+    <ClInclude Include="Maths\Number.h" />
+    <ClInclude Include="Maths\Plane3.h" />
+    <ClInclude Include="Maths\Quaternion.h" />
+    <ClInclude Include="Maths\Vector2.h" />
+    <ClInclude Include="Maths\Vector3.h" />
+    <ClInclude Include="Maths\VectorUtils.h" />
+    <ClInclude Include="Module\Module.h" />
+    <ClInclude Include="Module\ModuleManager.h" />
+    <ClInclude Include="Object\Class.h" />
+    <ClInclude Include="Object\Object.h" />
+    <ClInclude Include="Object\ObjectBasic.h" />
+    <ClInclude Include="Object\ObjectIterator.h" />
+    <ClInclude Include="Object\Property.h" />
+    <ClInclude Include="Patterns\Delegate.h" />
+    <ClInclude Include="Patterns\RefCount.h" />
+    <ClInclude Include="Patterns\Singleton.h" />
+    <ClInclude Include="SystemInfo\SystemInfo.h" />
+    <ClInclude Include="Types\Types.h" />
+    <CustomBuildStep Include="Types\Win32\Types.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='PSP Debug|Win32'">true</ExcludedFromBuild>
+    </CustomBuildStep>
+    <CustomBuildStep Include="Types\Linux\Types.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='PSP Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Win32 Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Win32 Release|Win32'">true</ExcludedFromBuild>
+    </CustomBuildStep>
+    <CustomBuildStep Include="Types\PSP\Types.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Win32 Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Win32 Release|Win32'">true</ExcludedFromBuild>
+    </CustomBuildStep>
+    <ClInclude Include="PlatformSpecific\PlatformSpecific.h" />
+    <CustomBuildStep Include="PlatformSpecific\Win32\PlatformSpecific.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='PSP Debug|Win32'">true</ExcludedFromBuild>
+    </CustomBuildStep>
+    <CustomBuildStep Include="PlatformSpecific\Linux\PlatformSpecific.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='PSP Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Win32 Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Win32 Release|Win32'">true</ExcludedFromBuild>
+    </CustomBuildStep>
+    <CustomBuildStep Include="PlatformSpecific\PSP\PlatformSpecific.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Win32 Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Win32 Release|Win32'">true</ExcludedFromBuild>
+    </CustomBuildStep>
+    <ClInclude Include="Time\DateTime.h" />
+    <ClInclude Include="Time\Timer.h" />
+    <ClInclude Include="Config\ConfigFile.h" />
+    <ClInclude Include="Config\Variant.h" />
+    <ClInclude Include="Test\Test.h" />
+    <ClInclude Include="Test\TestCase.h" />
+    <ClInclude Include="Test\TestResult.h" />
+    <ClInclude Include="Graphic\Color3.h" />
+    <ClInclude Include="Graphic\Color4.h" />
+    <ClInclude Include="Stream\Stream.h" />
+    <ClInclude Include="Package\Package.h" />
+    <ClInclude Include="Memory\Memory.h" />
+    <ClInclude Include="Thread\Event.h" />
+    <ClInclude Include="Thread\Mutex.h" />
+    <ClInclude Include="Thread\Semaphore.h" />
+    <ClInclude Include="Thread\Thread.h" />
+    <ClInclude Include="BuildOptions.h" />
+    <ClInclude Include="Core.h">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='PSP Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='PSP Debug|Win32'">Core.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='PSP Debug|Win32'">Core.h.gch</PrecompiledHeaderOutputFile>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='PSP Debug|Win32'">%(FullPath).gch</ObjectFileName>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Containers\StringUtils.cpp" />
+    <ClCompile Include="Debug\DebugUtil.cpp" />
+    <ClCompile Include="Debug\PerformanceMonitor.cpp" />
+    <ClCompile Include="Debug\StackTracer.cpp" />
+    <ClCompile Include="Exception\Exception.cpp" />
+    <ClCompile Include="FileManager\Checksum.cpp" />
+    <ClCompile Include="FileManager\Win32\FileManager.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='PSP Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="FileManager\Win32\MemoryFile.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='PSP Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="FileManager\Linux\FileManager.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='PSP Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Win32 Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Win32 Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="FileManager\PSP\FileManager.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Win32 Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Win32 Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Maths\BoundingBox.cpp" />
+    <ClCompile Include="Maths\Frustum.cpp" />
+    <ClCompile Include="Maths\Intersection.cpp" />
+    <ClCompile Include="Maths\Line3.cpp" />
+    <ClCompile Include="Maths\Matrix4.cpp" />
+    <ClCompile Include="Maths\Number.cpp" />
+    <ClCompile Include="Maths\Plane3.cpp" />
+    <ClCompile Include="Maths\Quaternion.cpp" />
+    <ClCompile Include="Maths\Vector2.cpp" />
+    <ClCompile Include="Maths\Vector3.cpp" />
+    <ClCompile Include="Module\Module.cpp" />
+    <ClCompile Include="Module\ModuleManager.cpp" />
+    <ClCompile Include="Object\Class.cpp" />
+    <ClCompile Include="Object\Object.cpp" />
+    <ClCompile Include="Object\Property.cpp" />
+    <ClCompile Include="SystemInfo\PSP\SystemInfo.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Win32 Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Win32 Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="SystemInfo\Win32\SystemInfo.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='PSP Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="SystemInfo\Linux\SystemInfo.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='PSP Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Win32 Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Win32 Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="PlatformSpecific\Win32\PlatformSpecific.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='PSP Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Time\DateTime.cpp" />
+    <ClCompile Include="Time\Timer.cpp" />
+    <ClCompile Include="Config\ConfigFile.cpp" />
+    <ClCompile Include="Config\Variant.cpp" />
+    <ClCompile Include="Test\Test.cpp" />
+    <ClCompile Include="Test\TestCase.cpp" />
+    <ClCompile Include="Test\TestResult.cpp" />
+    <ClCompile Include="Graphic\Color3.cpp" />
+    <ClCompile Include="Graphic\Color4.cpp" />
+    <ClCompile Include="Stream\Stream.cpp" />
+    <ClCompile Include="Package\Package.cpp" />
+    <ClCompile Include="Thread\Win32\Event.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='PSP Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Thread\Win32\Mutex.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='PSP Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Thread\Win32\Semaphore.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='PSP Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Thread\Win32\Thread.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='PSP Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Core.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='PSP Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Win32 Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Win32 Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

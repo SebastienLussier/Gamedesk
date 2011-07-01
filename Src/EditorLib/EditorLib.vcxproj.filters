@@ -1,0 +1,222 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="EditorLib">
+      <UniqueIdentifier>{4c67a63f-aba3-4dab-8153-e3202f2da5cd}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="EditorLib\Drag">
+      <UniqueIdentifier>{6a490d91-f424-44e4-9605-e7fe73f80e0b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="EditorLib\Viewer">
+      <UniqueIdentifier>{86eded60-cf3c-4fcf-9193-143d45694c15}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="EditorLib\Tool">
+      <UniqueIdentifier>{f294318a-682f-4572-92af-1e31e084532c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="moc">
+      <UniqueIdentifier>{1301ddf4-682f-4d02-a06e-78beea18b91d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Manipulator">
+      <UniqueIdentifier>{fa971aa9-f662-42b2-8cb7-b84c5a405f4b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Command">
+      <UniqueIdentifier>{d06500c6-e25e-4a59-8af2-420bff39453f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PropertyList">
+      <UniqueIdentifier>{8baf8da1-6013-4393-ad6f-91766a7ab6d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ResourceManager">
+      <UniqueIdentifier>{63856144-0f62-4678-bc0f-6145deb2b561}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ResourceManager\Generated Files">
+      <UniqueIdentifier>{e4a11fa1-a48a-4bfb-af1f-8c3514343fa9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="WorldTool">
+      <UniqueIdentifier>{1de02618-d91c-4ee3-a6b8-70c359373a53}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="WorldTool\Generated Files">
+      <UniqueIdentifier>{9da6fa03-8fd6-4948-b83e-a6906f5018f9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="EditorBase.cpp">
+      <Filter>EditorLib</Filter>
+    </ClCompile>
+    <ClCompile Include="EditorLib.cpp">
+      <Filter>EditorLib</Filter>
+    </ClCompile>
+    <ClCompile Include="EntityCreationListener.cpp">
+      <Filter>EditorLib</Filter>
+    </ClCompile>
+    <ClCompile Include="EntityCreationSender.cpp">
+      <Filter>EditorLib</Filter>
+    </ClCompile>
+    <ClCompile Include="SelectionListener.cpp">
+      <Filter>EditorLib</Filter>
+    </ClCompile>
+    <ClCompile Include="SelectionSender.cpp">
+      <Filter>EditorLib</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldManager.cpp">
+      <Filter>EditorLib</Filter>
+    </ClCompile>
+    <ClCompile Include="CameraChangeListener.cpp">
+      <Filter>EditorLib\Drag</Filter>
+    </ClCompile>
+    <ClCompile Include="CameraChangeSender.cpp">
+      <Filter>EditorLib\Drag</Filter>
+    </ClCompile>
+    <ClCompile Include="CreateEntityCommand.cpp">
+      <Filter>EditorLib\Drag</Filter>
+    </ClCompile>
+    <ClCompile Include="DeleteEntityCommand.cpp">
+      <Filter>EditorLib\Drag</Filter>
+    </ClCompile>
+    <ClCompile Include="AVIEncoder.cpp">
+      <Filter>EditorLib\Viewer</Filter>
+    </ClCompile>
+    <ClCompile Include="QRenderWindow.cpp">
+      <Filter>EditorLib\Viewer</Filter>
+    </ClCompile>
+    <ClCompile Include="Viewer.cpp">
+      <Filter>EditorLib\Viewer</Filter>
+    </ClCompile>
+    <ClCompile Include="EditorTool.cpp">
+      <Filter>EditorLib\Tool</Filter>
+    </ClCompile>
+    <ClCompile Include="moc_EditorBase.cpp">
+      <Filter>moc</Filter>
+    </ClCompile>
+    <ClCompile Include="Manipulator\Manipulator.cpp">
+      <Filter>Manipulator</Filter>
+    </ClCompile>
+    <ClCompile Include="Command\Command.cpp">
+      <Filter>Command</Filter>
+    </ClCompile>
+    <ClCompile Include="Command\CommandManager.cpp">
+      <Filter>Command</Filter>
+    </ClCompile>
+    <ClCompile Include="PropertyList\DefaultHelpers.cpp">
+      <Filter>PropertyList</Filter>
+    </ClCompile>
+    <ClCompile Include="PropertyList\moc_PropertyList.cpp">
+      <Filter>PropertyList</Filter>
+    </ClCompile>
+    <ClCompile Include="PropertyList\PropertyHelper.cpp">
+      <Filter>PropertyList</Filter>
+    </ClCompile>
+    <ClCompile Include="PropertyList\PropertyList.cpp">
+      <Filter>PropertyList</Filter>
+    </ClCompile>
+    <ClCompile Include="ResourceManager\ResourceManagerTool.cpp">
+      <Filter>ResourceManager</Filter>
+    </ClCompile>
+    <ClCompile Include="ResourceManager\ResourceManagerUI.cpp">
+      <Filter>ResourceManager</Filter>
+    </ClCompile>
+    <ClCompile Include="ResourceManager\moc_ResourceManagerUI.cpp">
+      <Filter>ResourceManager\Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldTool\WorldTool.cpp">
+      <Filter>WorldTool</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldTool\WorldUI.cpp">
+      <Filter>WorldTool</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldTool\moc_WorldUI.cpp">
+      <Filter>WorldTool\Generated Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="EditorLib.h">
+      <Filter>EditorLib</Filter>
+    </ClInclude>
+    <ClInclude Include="EntityCreationListener.h">
+      <Filter>EditorLib</Filter>
+    </ClInclude>
+    <ClInclude Include="EntityCreationSender.h">
+      <Filter>EditorLib</Filter>
+    </ClInclude>
+    <ClInclude Include="SelectionListener.h">
+      <Filter>EditorLib</Filter>
+    </ClInclude>
+    <ClInclude Include="SelectionSender.h">
+      <Filter>EditorLib</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldManager.h">
+      <Filter>EditorLib</Filter>
+    </ClInclude>
+    <ClInclude Include="CameraChangeListener.h">
+      <Filter>EditorLib\Drag</Filter>
+    </ClInclude>
+    <ClInclude Include="CameraChangeSender.h">
+      <Filter>EditorLib\Drag</Filter>
+    </ClInclude>
+    <ClInclude Include="CreateEntityCommand.h">
+      <Filter>EditorLib\Drag</Filter>
+    </ClInclude>
+    <ClInclude Include="DeleteEntityCommand.h">
+      <Filter>EditorLib\Drag</Filter>
+    </ClInclude>
+    <ClInclude Include="AVIEncoder.h">
+      <Filter>EditorLib\Viewer</Filter>
+    </ClInclude>
+    <ClInclude Include="QRenderWindow.h">
+      <Filter>EditorLib\Viewer</Filter>
+    </ClInclude>
+    <ClInclude Include="Viewer.h">
+      <Filter>EditorLib\Viewer</Filter>
+    </ClInclude>
+    <ClInclude Include="EditorTool.h">
+      <Filter>EditorLib\Tool</Filter>
+    </ClInclude>
+    <ClInclude Include="Manipulator\Manipulator.h">
+      <Filter>Manipulator</Filter>
+    </ClInclude>
+    <ClInclude Include="Command\Command.h">
+      <Filter>Command</Filter>
+    </ClInclude>
+    <ClInclude Include="Command\CommandManager.h">
+      <Filter>Command</Filter>
+    </ClInclude>
+    <ClInclude Include="PropertyList\PropertyHelper.h">
+      <Filter>PropertyList</Filter>
+    </ClInclude>
+    <ClInclude Include="ResourceManager\ResourceManagerTool.h">
+      <Filter>ResourceManager</Filter>
+    </ClInclude>
+    <ClInclude Include="ResourceManager\ui_ResourceManagerUI.h">
+      <Filter>ResourceManager\Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldTool\WorldTool.h">
+      <Filter>WorldTool</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldTool\ui_WorldUI.h">
+      <Filter>WorldTool\Generated Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="EditorBase.h">
+      <Filter>EditorLib</Filter>
+    </CustomBuild>
+    <CustomBuild Include="PropertyList\DefaultHelpers.h">
+      <Filter>PropertyList</Filter>
+    </CustomBuild>
+    <CustomBuild Include="PropertyList\PropertyList.h">
+      <Filter>PropertyList</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ResourceManager\ResourceManagerUI.h">
+      <Filter>ResourceManager</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ResourceManager\ResourceManagerUI.ui">
+      <Filter>ResourceManager</Filter>
+    </CustomBuild>
+    <CustomBuild Include="WorldTool\WorldUI.h">
+      <Filter>WorldTool</Filter>
+    </CustomBuild>
+    <CustomBuild Include="WorldTool\WorldUI.ui">
+      <Filter>WorldTool</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

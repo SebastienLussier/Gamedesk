@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<VisualStudioProject
+	ProjectType="Visual C++"
+	Version="9.00"
+	Name="PSPLaunch"
+	ProjectGUID="{89EF22A5-08DC-493E-B145-64ADE599228B}"
+	RootNamespace="PSPLaunch"
+	TargetFrameworkVersion="131072"
+	>
+	<Platforms>
+		<Platform
+			Name="Win32"
+		/>
+	</Platforms>
+	<ToolFiles>
+	</ToolFiles>
+	<Configurations>
+		<Configuration
+			Name="PSP Debug|Win32"
+			OutputDirectory="$(GAMEDESK_ROOT)\Bin\"
+			IntermediateDirectory="$(GAMEDESK_ROOT)\Temp\$(ConfigurationName)\$(ProjectName)"
+			ConfigurationType="2"
+			UseOfMFC="0"
+			ATLMinimizesCRunTimeLibraryUsage="false"
+			DeleteExtensionsOnClean="*.o;*.d;$(TargetPath)"
+			EnableManagedIncrementalBuild="0"
+			>
+			<Tool
+				Name="VCPreBuildEventTool"
+			/>
+			<Tool
+				Name="VCCustomBuildTool"
+			/>
+			<Tool
+				Name="VCXMLDataGeneratorTool"
+			/>
+			<Tool
+				Name="VCWebServiceProxyGeneratorTool"
+			/>
+			<Tool
+				Name="VCMIDLTool"
+			/>
+			<Tool
+				Name="VCCLCompilerTool"
+				AdditionalOptions="/VCCX_CFG=psp"
+				AdditionalIncludeDirectories=".;&quot;$(GAMEDESK_ROOT)/Cpp/Core&quot;;&quot;$(GAMEDESK_ROOT)/Cpp/Engine&quot;;&quot;$(GAMEDESK_ROOT)/Cpp/Plugins/Graphic/PSPGraphic&quot;;&quot;$(PSPSDK)\include&quot;"
+				PreprocessorDefinitions="GD_DEBUG;PSP"
+				ExceptionHandling="0"
+				WarningLevel="4"
+				DebugInformationFormat="4"
+			/>
+			<Tool
+				Name="VCManagedResourceCompilerTool"
+			/>
+			<Tool
+				Name="VCResourceCompilerTool"
+			/>
+			<Tool
+				Name="VCPreLinkEventTool"
+			/>
+			<Tool
+				Name="VCLinkerTool"
+				LinkLibraryDependencies="false"
+				AdditionalOptions="$(PSPSDK)\lib\prxexports.o&#x0D;&#x0A;/VCCX_CFG=psp"
+				AdditionalDependencies="-lPSPGraphic -lEngine -lCore -lpspgum -lm -lstdc++ -lpspgu -lpsprtc -lpspdebug -lpspdisplay -lpspge -lpspctrl -lpspsdk -lpsppower -lc -lpspnet -lpspnet_inet -lpspnet_apctl -lpspnet_resolver -lpsputility -lpspuser $(NOINHERIT)"
+				OutputFile="$(IntDir)\$(ProjectName)_d.elf"
+				AdditionalLibraryDirectories="..\..\Lib\PSP Debug\"
+				GenerateManifest="false"
+				IgnoreAllDefaultLibraries="true"
+				AddModuleNamesToAssembly=""
+				GenerateDebugInformation="true"
+			/>
+			<Tool
+				Name="VCALinkTool"
+			/>
+			<Tool
+				Name="VCManifestTool"
+			/>
+			<Tool
+				Name="VCXDCMakeTool"
+			/>
+			<Tool
+				Name="VCBscMakeTool"
+			/>
+			<Tool
+				Name="VCFxCopTool"
+			/>
+			<Tool
+				Name="VCAppVerifierTool"
+			/>
+			<Tool
+				Name="VCPostBuildEventTool"
+				Description="Building prx..."
+				CommandLine="psp-fixup-imports &quot;$(TargetPath)&quot;&#x0D;&#x0A;psp-prxgen &quot;$(TargetPath)&quot; &quot;$(OutDir)$(TargetName).prx&quot;&#x0D;&#x0A;"
+			/>
+		</Configuration>
+		<Configuration
+			Name="PSP Release|Win32"
+			OutputDirectory=".\../../../Tmp/PSPLaunch/Release"
+			IntermediateDirectory=".\../../../Tmp/PSPLaunch/Release"
+			ConfigurationType="0"
+			InheritedPropertySheets="$(VCInstallDir)VCProjectDefaults\UpgradeFromVC71.vsprops"
+			UseOfMFC="0"
+			ATLMinimizesCRunTimeLibraryUsage="false"
+			>
+			<Tool
+				Name="VCNMakeTool"
+				BuildCommandLine="bjam --platform=PSP $(ProjectName) release  2&gt;&amp;1 | sed -e &quot;s/\(.[a-zA-Z]\+\):\([0-9]\+\):/\1(\2):/&quot;"
+				ReBuildCommandLine="bjam --platform=PSP $(ProjectName) release clean &amp;&amp; bjam --platform=PSP $(ProjectName) release  2&gt;&amp;1 | sed -e &quot;s/\(.[a-zA-Z]\+\):\([0-9]\+\):/\1(\2):/&quot;"
+				CleanCommandLine="bjam --platform=PSP $(ProjectName) release clean"
+				Output="libPSPLaunch.a"
+				PreprocessorDefinitions=""
+				IncludeSearchPath=""
+				ForcedIncludes=""
+				AssemblySearchPath=""
+				ForcedUsingAssemblies=""
+				CompileAsManaged=""
+			/>
+		</Configuration>
+	</Configurations>
+	<References>
+	</References>
+	<Files>
+		<File
+			RelativePath="D:\Programmation\Gamedesk\Cpp\PSPLaunch\Jamfile"
+			>
+		</File>
+		<File
+			RelativePath=".\PSPLaunch.cpp"
+			>
+		</File>
+	</Files>
+	<Globals>
+	</Globals>
+</VisualStudioProject>

@@ -1,0 +1,69 @@
+<ui version="4.0" stdsetdef="1" >
+  <author></author>
+  <comment></comment>
+  <exportmacro></exportmacro>
+  <class>QCameraTool</class>
+  <widget class="QWidget" name="QCameraTool" >
+    <property name="geometry" >
+      <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>214</width>
+        <height>361</height>
+      </rect>
+    </property>
+    <property name="windowTitle" >
+      <string>Camera Tool</string>
+    </property>
+    <layout class="QGridLayout" >
+      <property name="margin" >
+        <number>11</number>
+      </property>
+      <property name="spacing" >
+        <number>6</number>
+      </property>
+      <item row="0" column="0" >
+        <widget class="QComboBox" name="mCamerasCB" />
+      </item>
+      <item row="1" column="0" >
+        <widget class="Q3Frame" name="mPropertyEditorFrame" >
+          <property name="frameShape" >
+            <enum>StyledPanel</enum>
+          </property>
+          <property name="frameShadow" >
+            <enum>Raised</enum>
+          </property>
+        </widget>
+      </item>
+      <item row="5" column="0" >
+        <widget class="QPushButton" name="mDeleteCurrentCameraBtn" >
+          <property name="text" >
+            <string>Delete Current Camera</string>
+          </property>
+        </widget>
+      </item>
+      <item row="2" column="0" >
+        <widget class="QPushButton" name="mNewNormalCameraBtn" >
+          <property name="text" >
+            <string>New Normal Camera</string>
+          </property>
+        </widget>
+      </item>
+      <item row="4" column="0" >
+        <widget class="QPushButton" name="mNewFollowCameraBtn" >
+          <property name="text" >
+            <string>New Follow Camera</string>
+          </property>
+        </widget>
+      </item>
+      <item row="3" column="0" >
+        <widget class="QPushButton" name="mNewLookCameraBtn" >
+          <property name="text" >
+            <string>New Look Camera</string>
+          </property>
+        </widget>
+      </item>
+    </layout>
+  </widget>
+  <pixmapfunction>qPixmapFromMimeSource</pixmapfunction>
+</ui>

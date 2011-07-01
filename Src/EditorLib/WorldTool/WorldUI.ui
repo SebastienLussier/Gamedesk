@@ -1,0 +1,101 @@
+<ui version="4.0" >
+ <author></author>
+ <comment></comment>
+ <exportmacro></exportmacro>
+ <class>WorldUI</class>
+ <widget class="QWidget" name="WorldUI" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>272</width>
+    <height>472</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>World</string>
+  </property>
+  <layout class="QVBoxLayout" >
+   <property name="margin" >
+    <number>2</number>
+   </property>
+   <property name="spacing" >
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QTabWidget" name="mTabWidget" >
+     <property name="tabPosition" >
+      <enum>QTabWidget::South</enum>
+     </property>
+     <property name="tabShape" >
+      <enum>QTabWidget::Rounded</enum>
+     </property>
+     <property name="currentIndex" >
+      <number>1</number>
+     </property>
+     <widget class="QWidget" name="mTabBrowser" >
+      <attribute name="title" >
+       <string>Browser</string>
+      </attribute>
+      <layout class="QVBoxLayout" >
+       <property name="margin" >
+        <number>9</number>
+       </property>
+       <property name="spacing" >
+        <number>6</number>
+       </property>
+       <item>
+        <widget class="QTreeWidget" name="mWorldBrowserTree" />
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="mTabEntities" >
+      <attribute name="title" >
+       <string>Entities</string>
+      </attribute>
+      <layout class="QVBoxLayout" >
+       <property name="margin" >
+        <number>9</number>
+       </property>
+       <property name="spacing" >
+        <number>6</number>
+       </property>
+       <item>
+        <widget class="QTreeWidget" name="mEntitiesTree" >
+         <property name="sortingEnabled" >
+          <bool>true</bool>
+         </property>
+         <column>
+          <property name="text" >
+           <string>Class Hierarchy</string>
+          </property>
+         </column>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <pixmapfunction></pixmapfunction>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>mEntitiesTree</sender>
+   <signal>itemDoubleClicked(QTreeWidgetItem*,int)</signal>
+   <receiver>WorldUI</receiver>
+   <slot></slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>398</x>
+     <y>346</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>399</x>
+     <y>356</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

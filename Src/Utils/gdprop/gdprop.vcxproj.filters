@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Cpp Parser">
+      <UniqueIdentifier>{354d8583-1600-4c1e-94fa-ccb30c5cf410}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="VCProj Parser">
+      <UniqueIdentifier>{5efce90d-be47-48bd-b7b9-18ec9f437b64}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="cpp parser\ClassDesc.h">
+      <Filter>Cpp Parser</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp parser\EnumDesc.h">
+      <Filter>Cpp Parser</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp parser\HeaderReader.h">
+      <Filter>Cpp Parser</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp parser\PropertyDesc.h">
+      <Filter>Cpp Parser</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp parser\PropertyDescFactory.h">
+      <Filter>Cpp Parser</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp parser\PropertyDescSpecializations.h">
+      <Filter>Cpp Parser</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp parser\Reader.h">
+      <Filter>Cpp Parser</Filter>
+    </ClInclude>
+    <ClInclude Include="vcproj parser\ProjReader.h">
+      <Filter>VCProj Parser</Filter>
+    </ClInclude>
+    <ClInclude Include="vcproj parser\Reader.h">
+      <Filter>VCProj Parser</Filter>
+    </ClInclude>
+    <ClInclude Include="vcproj parser\Section.h">
+      <Filter>VCProj Parser</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Main.cpp" />
+  </ItemGroup>
+</Project>

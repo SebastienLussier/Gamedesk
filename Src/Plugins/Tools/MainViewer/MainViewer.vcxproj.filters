@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="MainViewer">
+      <UniqueIdentifier>{fea87d1e-a559-47c3-8571-04567e973494}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Qt">
+      <UniqueIdentifier>{7f076042-663b-42bb-918e-4812463aba8e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CameraManipulator.cpp">
+      <Filter>MainViewer</Filter>
+    </ClCompile>
+    <ClCompile Include="DragCommand.cpp">
+      <Filter>MainViewer</Filter>
+    </ClCompile>
+    <ClCompile Include="DragManipulator.cpp">
+      <Filter>MainViewer</Filter>
+    </ClCompile>
+    <ClCompile Include="MainViewer.cpp">
+      <Filter>MainViewer</Filter>
+    </ClCompile>
+    <ClCompile Include="MainViewerDll.cpp">
+      <Filter>MainViewer</Filter>
+    </ClCompile>
+    <ClCompile Include="MainViewerUI.cpp">
+      <Filter>MainViewer</Filter>
+    </ClCompile>
+    <ClCompile Include="RotateCommand.cpp">
+      <Filter>MainViewer</Filter>
+    </ClCompile>
+    <ClCompile Include="TrackballManipulator.cpp">
+      <Filter>MainViewer</Filter>
+    </ClCompile>
+    <ClCompile Include="Qt\moc_MainViewerUI.cpp">
+      <Filter>Qt</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CameraManipulator.h">
+      <Filter>MainViewer</Filter>
+    </ClInclude>
+    <ClInclude Include="DragCommand.h">
+      <Filter>MainViewer</Filter>
+    </ClInclude>
+    <ClInclude Include="DragManipulator.h">
+      <Filter>MainViewer</Filter>
+    </ClInclude>
+    <ClInclude Include="MainViewer.h">
+      <Filter>MainViewer</Filter>
+    </ClInclude>
+    <ClInclude Include="MainViewerDll.h">
+      <Filter>MainViewer</Filter>
+    </ClInclude>
+    <ClInclude Include="RotateCommand.h">
+      <Filter>MainViewer</Filter>
+    </ClInclude>
+    <ClInclude Include="TrackballManipulator.h">
+      <Filter>MainViewer</Filter>
+    </ClInclude>
+    <ClInclude Include="Qt\QMainViewer.h">
+      <Filter>Qt</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\movie.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="MainViewerUI.h">
+      <Filter>MainViewer</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Qt\QMainViewer.ui">
+      <Filter>Qt</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>
